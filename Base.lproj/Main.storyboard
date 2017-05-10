@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RyL-jr-4yZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Views-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewDrawerViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Views" id="Fwl-gj-7eg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.5999999999999" y="-257.72113943028489"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="CmO-7w-nHz">
+            <objects>
+                <viewController id="jdq-ZT-uM5" customClass="SettingViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LUB-3F-WcT"/>
+                        <viewControllerLayoutGuide type="bottom" id="M4T-Yh-gfb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sst-7H-2jP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljj-QG-niW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UFX-jp-zli">
+                                        <rect key="frame" x="7" y="30" width="361" height="311"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mis-fJ-A8L">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="216"/>
+                                            </pickerView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rJ7-I1-5P6">
+                                                <rect key="frame" x="0.0" y="236" width="361" height="75"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Minimal quantity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ho5-hy-2ns">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Maximum quantity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pc7-Iu-NXf">
+                                                        <rect key="frame" x="0.0" y="45" width="361" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UFX-jp-zli" secondAttribute="trailing" constant="7" id="GJa-rj-jfD"/>
+                                    <constraint firstItem="UFX-jp-zli" firstAttribute="leading" secondItem="ljj-QG-niW" secondAttribute="leading" constant="7" id="SzN-jG-e9Y"/>
+                                    <constraint firstItem="UFX-jp-zli" firstAttribute="top" secondItem="ljj-QG-niW" secondAttribute="top" constant="30" id="sKe-ZK-leE"/>
+                                    <constraint firstAttribute="bottom" secondItem="UFX-jp-zli" secondAttribute="bottom" constant="282" id="vGz-kH-nfx"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ljj-QG-niW" secondAttribute="trailing" id="3iQ-o7-xPP"/>
+                            <constraint firstItem="ljj-QG-niW" firstAttribute="leading" secondItem="Sst-7H-2jP" secondAttribute="leading" id="Q8A-Sr-376"/>
+                            <constraint firstItem="M4T-Yh-gfb" firstAttribute="top" secondItem="ljj-QG-niW" secondAttribute="bottom" id="RLo-AF-oN3"/>
+                            <constraint firstItem="ljj-QG-niW" firstAttribute="top" secondItem="Sst-7H-2jP" secondAttribute="top" id="aDk-M2-aep"/>
+                            <constraint firstItem="UFX-jp-zli" firstAttribute="width" secondItem="Sst-7H-2jP" secondAttribute="width" constant="-14" id="zls-z3-MT4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="D8s-FK-Lza"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="RLo-AF-oN3" id="xdU-yi-PFm"/>
+                        <outlet property="maximumQauntity" destination="Pc7-Iu-NXf" id="ULw-rY-S5s"/>
+                        <outlet property="minimalQuantity" destination="ho5-hy-2ns" id="mVo-7L-UQ3"/>
+                        <outlet property="quantityPicker" destination="Mis-fJ-A8L" id="B74-Q6-vcR"/>
+                        <outlet property="scrollView" destination="ljj-QG-niW" id="ES9-iR-YWU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5M-5E-wue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.5999999999999" y="530.28485757121439"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="76l-E4-1GL">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RyL-jr-4yZ" customClass="MainTabBarController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Pfy-xo-EaQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jdq-ZT-uM5" kind="relationship" relationship="viewControllers" id="PlD-x7-IH1"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="STL-T1-GXo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2N-eV-yz4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
